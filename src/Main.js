@@ -9,9 +9,17 @@ import TodosList from './components/TodosList/TodosList';
 
 const Main = () => {
 
+    // useState adalah array yg mempunyai dua elemen, 
+    // elemen pertama itu nama state nya yang kedua fungdi untuk
+    // mengupdate nya
+
+    // useEffect adalah komponen hook yg pertama kali dijalankan pas 
+    // komponen ditampilkan di app
+
+
     const [input, setInput] = useState("");
     const [todos, setTodos] = useState([]);
-    const [editTodo, setEditTodo] = useState(null);
+    const [editTodo, setEditTodo] = useState(false);
 
     return (
         <div className='container'>
